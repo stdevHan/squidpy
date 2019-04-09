@@ -67,7 +67,7 @@ def compareUser(pathuser, users):
 def squid(pathlog, pathexclude, pathuser):
     users = userlist()
     f = open(str(pathlog))
-    #excludes = open(str(pathexclude)) by not used for now
+    # excludes = open(str(pathexclude)) by not used for now
     for a in f:
         text = a.split(' ')
         if len(text) == 11 and (text[4] == 'TCP_TUNNEL/200' or text[4] == 'TCP_MISS/200'):
